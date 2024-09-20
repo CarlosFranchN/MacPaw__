@@ -1,0 +1,31 @@
+button.cky-accordion-btn:not(:hover):not(:active),
+button.cky-banner-btn-close:not(:hover):not(:active),
+button.cky-btn-close:not(:hover):not(:active),
+button.cky-btn-revisit:not(:hover):not(:active) {
+    background: transparent;
+}
+
+.cky-revisit-bottom-left:hover::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: #4e4b66;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    line-height: 1rem;
+    left: calc(100% + 7px);
+    /* transform: translateY(-50%); */
+    z-index: 1000;
+    font-size: 1rem;
+    width: max-content;
+}
+
+.cky-revisit-bottom-left:hover::after {
+    position: absolute;
+    content: "";
+    border: 5px solid transparent;
+    left: calc(100% + 2px);
+    border-left-width: 0;
+    border-right-color: #4e4b66;
+}

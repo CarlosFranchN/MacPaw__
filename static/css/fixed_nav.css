@@ -1,0 +1,81 @@
+.fixed-nav.-active {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    visibility: visible;
+}
+
+
+.fixed-nav {
+    background: #fff;
+    background: hsla(0, 0%, 100%, .98);
+    box-shadow: 0 10px 50px -20px rgba(0, 0, 0, .16);
+    left: 0;
+    opacity: 0;
+    padding: 11px 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    transition: all .42s cubic-bezier(.164,.84,.42,1);
+    visibility: hidden;
+    will-change: opacity;
+    z-index: 999;
+}
+@media only screen and (max-width: 575px) {
+    .fixed-nav {
+        display:none
+    }
+}
+
+.fixed-nav.-active {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    visibility: visible
+}
+
+.fixed-nav.-dark {
+    background: #120f2a;
+    color: #fff;
+    padding: 24px 0
+}
+
+.fixed-nav .fixed-nav-in {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.fixed-nav .fixed-nav-left {
+
+    align-items: center;
+
+    display: flex;
+    font-weight: 600;
+}
+
+.fixed-nav .fixed-nav-right .cta-btns{
+    display: flex;
+    gap: 1rem;
+    
+}
+.fixed-nav .fixed-nav-left img {
+    margin-right: 10px;
+}
+.fixed-nav .fixed-nav-left img, .fixed-nav .fixed-nav-left span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+.fixed-nav .fixed-nav-in .cta-btns .btn {
+    margin-bottom: 0;
+}
+
+.cta-btns .btn, .cta-btns .link-more {
+    margin-bottom: 14px;
+}

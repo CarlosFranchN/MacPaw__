@@ -1,0 +1,58 @@
+.cky-footer-wrapper{
+    position: relative;
+    border-color: inherit;
+}
+
+.cky-footer-shadow{
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    position: absolute;
+    bottom: calc(100% - 1px);
+}
+
+.cky-preference-btn-wrapper{
+    border-color: inherit;
+    padding: 1.4rem 1.5rem;
+    border-top: 1px solid;
+}
+.cky-preference-btn-wrapper .cky-btn:first-child{
+    margin: 0;
+}
+.cky-preference-btn-wrapper .cky-btn{
+    width: 100%;
+    text-shadow: none;
+    box-shadow:none ;
+    margin: .5rem 0 0 0;
+    white-space: unset;
+}
+
+.cky-btn{
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: inherit;
+    line-height: 24px;
+    padding: 8px 27px;
+    font-weight: 500;
+    margin: 0 8px 0 0;
+    
+    white-space: nowrap;
+    cursor: pointer;
+    text-align: center;
+    text-transform: none;
+    min-height: 0;
+    overflow-wrap: break-word;
+}
+.cky-btn-accept{
+    background: #1863dc;
+    color: #ffffff;
+    border: 2px solid #1863dc;
+}
+
+.cky-btn-preferences , .cky-btn-reject{
+    color: #1863dc;
+    background: transparent;
+    border: 2px solid #1863dc;
+}
+
+

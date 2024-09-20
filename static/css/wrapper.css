@@ -1,0 +1,161 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-in {
+    background: none;
+    height: 4.5rem;
+    position: relative;
+}
+
+.nav-in .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    height: 3.5rem;
+    z-index: 3;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 72rem;
+    padding: 0 1rem;
+}
+
+.nav-logo {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.nav-logo .icon-macpaw-paw svg path{
+    fill: #000;
+}
+
+
+.nav-logo .icon-macpaw-paw svg {
+
+    height: 24px;
+    transition: all .5s ease-in-out;
+    width: 24px;
+}
+
+.nav-logo .icon-macpaw-text svg {
+    height: 24px;
+    transition: color .5s ease-in-out;
+    width: 84px;
+}
+
+.nav-logo .icon-macpaw-paw,
+.nav .nav-logo .icon-macpaw-text {
+    fill: currentColor;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* ========================== parte 2 da nav  =========================== */
+
+.nav-in .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    transition: color;
+}
+
+.nav-in .nav-links li {
+    line-height: 1;
+    position: relative;
+}
+
+.nav-in .nav-links li a {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 5;
+}
+.-open .nav-in .nav-links li a{
+    z-index: -10;
+}
+
+.nav-in .nav-links li .divStoreIcon {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+/* 
+.nav-links li a .store-icon {
+    margin-right: 4px;
+} */
+
+.store-icon {
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    vertical-align: middle;
+}
+
+.nav-links-text {
+    position: relative;
+
+}
+
+.nav-links li:not(:first-child) {
+    margin-left: .2rem;
+}
+
+.humb {
+    background: none;
+    color: #000;
+    font-weight: 600;
+    height: 2.6rem;
+    min-width: 2.6rem;
+    margin-left: 2.6rem;
+    padding-right: 0;
+    position: relative;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.humb-icon {
+    cursor: pointer;
+    height: 24px;
+
+    left: 0;
+    /* margin-top: -7px; */
+    overflow: hidden;
+    /* position: absolute; */
+    /* top: 50%; */
+    transition: .5s ease-in-out;
+    width: 21px;
+}
+
+.humb-text {
+    font-size: 16px;
+    position: relative;
+    font-size: Montserrat, "Helvetica Neue", sans-serif;
+
+}

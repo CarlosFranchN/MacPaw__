@@ -1,0 +1,65 @@
+.download {
+    margin-bottom: 64px;
+}
+
+.download.-cleanmymac .download-in:before {
+    background: #ecf1ff linear-gradient(90deg,#ecf1ff 0,#fef8fd)
+}
+
+.download.-banner .h2 {
+    margin-bottom: 8px
+}
+
+.download.-banner .download-image {
+    padding-left: 22%
+}
+
+.download .download-in {
+    position: relative
+}
+
+
+
+.download .download-in:before {
+    border-radius: 8px;
+    bottom: 0;
+    content: "";
+    left: 25%;
+    opacity: .64;
+    position: absolute;
+    right: 16px;
+    top: 0
+}
+
+
+.download .download-info {
+    font-size: 16px
+}
+
+.-legacy .download .download-info {
+    margin-bottom: 24px
+}
+
+.download .download-image {
+    -webkit-align-items: center;
+    align-items: center;
+    border-radius: 8px;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 0;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding-left: 12%;
+    position: relative
+}
+
+.download .download-image img {
+    height: auto;
+    max-width: 110%
+}
+/* .download.-cleanmymac-x .download-in:before {
+    background: #f1f8ff linear-gradient(90deg,#f1f8ff 0,#fff2f8)
+} */
+/* .download.-cleanmymac-x .download-in:before {
+    background: #f1f8ff linear-gradient(90deg, #f1f8ff 0, #fff2f8);
+} */

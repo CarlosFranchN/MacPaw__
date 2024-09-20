@@ -1,0 +1,215 @@
+.cky.cky-modal.cky-sidebar-left{
+    left: 0;
+    transform: translate(-100%);
+}
+
+.cky-modal{
+    background: #ffffff;
+    z-index: 999999;
+    color: #212121;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    max-width: 100%;
+
+    overflow-y: visible;
+    overflow-x: visible;
+    visibility: hidden;
+}
+
+.cky-modal.cky-sidebar-left.cky-modal-open, .cky-modal.cky-sidebar-right.cky-modal-open {
+    overflow-x: hidden;
+    overflow-y: auto;
+    visibility: visible ;
+    transform: translate(0);
+    transition-duration: .4s;
+    transition-property: transform;
+
+}
+
+
+.cky-preference-center {
+    color: #212121;
+    border-color: #f4f4f4;
+    background-color: #ffffff;
+
+
+    height: 100vh;
+    overflow: hidden;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* preference header */
+.cky-preference-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 1.5rem;
+    border: 1px solid;
+}
+
+/* titulo modal */
+.cky-preference-center .cky-modal-title {
+    color: #212121;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.cky-preference-center .cky-btn-close {
+    margin: 0;
+    cursor: pointer;
+    vertical-align: middle;
+    padding: 0;
+    background: none;
+    border: none;
+    width: auto;
+    height: auto;
+    min-height: 0;
+    line-height: 0;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+/* preference body */
+.cky-preference-body-wrapper {
+    padding: 0 1.5rem;
+    flex: 1;
+    overflow: auto;
+    box-sizing: border-box;
+}
+.cky-preference-content-wrapper{
+    color: #212121;
+}
+.cky-preference-content-wrapper,
+.cky-gpc-wrapper .cky-gpc-desc {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 12px 0;
+} 
+
+/* Accordion wrapper no preferences */
+.cky-accordion-wrapper{
+    margin-bottom: .6rem;
+}
+
+.cky-accordion{
+    border-bottom: 1px solid;
+}
+
+.cky-accordion .cky-accordion-item{
+    display: flex;
+    margin-top: .6rem;
+}
+
+.cky-accordion-chevron{
+    margin-right: 1.375rem;
+    position: relative;
+    cursor: pointer;
+}
+i{font-style: italic;}
+
+.cky-accordion .cky-accordion-chevron i::before {
+    content: "";
+    position: absolute;
+    border-right: 1.4px solid;
+    border-bottom: 1.4px solid;
+    border-color: inherit;
+    height: .4rem;
+    width: .4rem;
+
+    transform: rotate(-45deg);
+    transition: all 0.2s ease-in-out;
+    top: .5rem;
+}
+
+.cky-accordion-header-wrapper{
+    cursor: pointer;
+    width: 100%;
+}
+
+.cky-accordion-item .cky-accordion-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cky-accordion-item .cky-accordion-header .cky-accordion-btn{
+    color: #212121;
+}
+.cky-accordion-header .cky-accordion-btn{
+    font-size: 1rem;
+    font-family: inherit;
+    /* color: #212121; */
+    line-height: 1.5rem;
+    background: none;
+    border: none;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    text-transform: none;
+    min-height: 0;
+    text-shadow: none;
+    box-shadow: none;
+}
+.cky-accordion-header .cky-always-active{
+    color: #008000;
+    font-weight: 600;
+    line-height: 1.5rem;
+    font-size: .9rem;
+}
+
+.cky-accordion-header-des{
+    font-size: .9rem;
+    line-height: 1.5rem;
+    margin: .6rem 0 1rem 0;
+}
+
+.cky-accordion .cky-accordion-body{
+    display: none;
+}
+
+.cky-audit-table{
+    background: #f4f4f4;
+    border-radius: 6px;
+}
+
+.cky-audit-table .cky-cookie-des-table {
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: normal;
+    padding: 15px 10px;
+    border-bottom: 1px solid;
+    border-bottom-color: inherit;
+    margin: 0;
+}
+
+.cky-audit-table .cky-cookie-des-table:first-child{
+    padding-top: 0;
+}
+
+.cky-audit-table .cky-cookie-des-table li {
+    display: flex;
+    padding: 3px 0;
+}
+
+.cky-audit-table .cky-cookie-des-table li div:first-child{
+    width: 6.25rem;
+    font-weight: 600;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+.cky-audit-table .cky-cookie-des-table li div:last-child{
+    flex: 1;
+    word-break: break-word;
+    word-wrap: break-word;
+    margin-left: .5rem;
+}
+ul{
+    list-style-type: none;
+}

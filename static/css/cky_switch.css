@@ -1,0 +1,35 @@
+.cky-switch{
+    display: flex;
+}
+
+.cky-switch input[type="checkbox"]:checked{
+    background: #1863dc;
+}
+
+.cky-switch input[type="checkbox"] {
+    position: relative;
+    width: 44px;
+    height: 24px;
+    margin: 0;
+    background: #d0d5d2;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    top: 0;
+}
+.cky-switch input[type="checkbox"]:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    border-radius: 50%;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    margin: 0;
+}

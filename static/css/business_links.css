@@ -1,0 +1,46 @@
+.business_education_links {
+    margin-bottom: 10rem;
+    margin-top: 3.75rem;
+    text-align: center;
+    
+}
+
+
+.business_education_links p.subheader {
+    margin: 0 auto 45px;
+    max-width: 930px;
+}
+.business_education_links .wrapper {
+    height: auto;
+    flex-direction: row;
+    gap: 6rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 736px;
+}
+
+.business_education_links .wrapper .link_block {
+    border: 2px solid rgba(0, 0, 0, .04);
+    border-radius: 20px;
+    color: #000;
+    height: 274px;
+    padding: 48px 15px 0;
+    transition: .5s;
+    width: 352px;
+    transition: border .3s ease;
+}
+
+.business_education_links .wrapper .link_block:hover{
+    border: 2px solid rgb(0, 0, 0,.5);
+}
+
+.business_education_links .wrapper .link_block p {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 35px 0 12px;
+}
+
+.business_education_links .wrapper .link_block p.link {
+    color: #1b9eff;
+    margin: 0;
+}

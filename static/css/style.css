@@ -1,0 +1,845 @@
+body {
+    -webkit-font-smoothing: auto;
+    /* background-color: black; */
+    font: 16px / 1.75 Montserrat, Helvetica Neue, sans-serif;
+    height: auto;
+    width: auto;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+.h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: .5em
+}
+
+.h1.-normal {
+    font-weight: 400
+}
+
+.h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: .5em
+}
+
+.h2.-normal {
+    font-weight: 400
+}
+
+.h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: .5em
+}
+
+.h3.-normal {
+    font-weight: 400
+}
+
+.h4 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: .5em
+}
+
+.h4.-normal {
+    font-weight: 400
+}
+
+.h5 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: .5em
+}
+
+.h5.-normal {
+    font-weight: 400
+}
+
+.h6 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: .5em
+}
+
+.h6.-normal {
+    font-weight: 400
+}
+
+@media only screen and (max-width: 575px) {
+    .h1 {
+        font-size: 28px
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .h2 {
+        font-size: 24px
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .h3 {
+        font-size: 20px
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .h4 {
+        font-size: 18px
+    }
+}
+
+.icon {
+    fill: currentColor;
+    height: 2rem;
+    vertical-align: middle;
+    width: 2rem;
+}
+
+
+.content-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px
+}
+
+.-white {
+    color: #fff;
+}
+
+p {
+    margin: 0 0 24px
+}
+
+button {
+    appearance: none;
+    cursor: pointer;
+}
+
+.main .wrapper {
+    position: relative;
+}
+
+.cky-revisit-bottom-left {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+
+}
+
+.cky-btn-revisit-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: #0056a7;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 999999;
+    cursor: pointer;
+
+    /* position: relative; */
+    margin: 0;
+    padding: 0;
+}
+
+.cky-btn-revisit-wrapper .cky-btn-revisit:not(:hover):not(:active),
+button .cky-btn-close:not(:hover):not(:active) {
+    background: transparent;
+
+}
+
+.cky-btn-revisit-wrapper .cky-btn-revisit {
+    border: none;
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: none;
+}
+
+
+.cky-btn-revisit-wrapper .cky-btn-revisit img {
+    max-width: fit-content;
+    margin: 0;
+    height: 2rem;
+    width: 2rem;
+    /* border: none; */
+}
+
+img {
+    border: none;
+}
+
+button {
+    appearance: none;
+    border: none;
+
+}
+
+/* ===================================================== */
+.cky-preference-header,
+.cky-preference-body-wrapper,
+.cky-accordion-wrapper,
+.cky-accordion,
+.cky-accordion-wrapper,
+.cky-footer-wrapper,
+.cky-prefrence-btn-wrapper {
+    border-color: inherit;
+}
+
+/* ===============  Modal sidebar  ====================== */
+
+.-clip {
+    overflow: hidden
+}
+
+.col-0 {
+    width: 0
+}
+
+.offset-left-0 {
+    margin-left: 0
+}
+
+.offset-right-0 {
+    margin-right: 0
+}
+
+.col-1 {
+    width: 8.33333%
+}
+
+.offset-left-1 {
+    margin-left: 8.33333%
+}
+
+.offset-right-1 {
+    margin-right: 8.33333%
+}
+
+.col-2 {
+    width: 16.66667%
+}
+
+.offset-left-2 {
+    margin-left: 16.66667%
+}
+
+.offset-right-2 {
+    margin-right: 16.66667%
+}
+
+.col-3 {
+    width: 25%
+}
+
+.offset-left-3 {
+    margin-left: 25%
+}
+
+.offset-right-3 {
+    margin-right: 25%
+}
+
+.col-4 {
+    width: 33.33333%
+}
+
+.offset-left-4 {
+    margin-left: 33.33333%
+}
+
+.offset-right-4 {
+    margin-right: 33.33333%
+}
+
+.col-5 {
+    width: 41.66667%
+}
+
+.offset-left-5 {
+    margin-left: 41.66667%
+}
+
+.offset-right-5 {
+    margin-right: 41.66667%
+}
+
+.col-6 {
+    width: 50%
+}
+
+.offset-left-6 {
+    margin-left: 50%
+}
+
+.offset-right-6 {
+    margin-right: 50%
+}
+
+.col-7 {
+    width: 58.33333%
+}
+
+.offset-left-7 {
+    margin-left: 58.33333%
+}
+
+.offset-right-7 {
+    margin-right: 58.33333%
+}
+
+.col-8 {
+    width: 66.66667%
+}
+
+.offset-left-8 {
+    margin-left: 66.66667%
+}
+
+.offset-right-8 {
+    margin-right: 66.66667%
+}
+
+.col-9 {
+    width: 75%
+}
+
+.offset-left-9 {
+    margin-left: 75%
+}
+
+.offset-right-9 {
+    margin-right: 75%
+}
+
+.col-10 {
+    width: 83.33333%
+}
+
+.offset-left-10 {
+    margin-left: 83.33333%
+}
+
+.offset-right-10 {
+    margin-right: 83.33333%
+}
+
+.col-11 {
+    width: 91.66667%
+}
+
+.offset-left-11 {
+    margin-left: 91.66667%
+}
+
+.offset-right-11 {
+    margin-right: 91.66667%
+}
+
+.col-12 {
+    width: 100%
+}
+
+.offset-left-12 {
+    margin-left: 100%
+}
+
+.offset-right-12 {
+    margin-right: 100%
+}
+
+@media only screen and (max-width: 767px) {
+    .col-s-0 {
+        -webkit-flex-basis: inherit;
+        flex-basis: inherit;
+        -webkit-flex-grow: inherit;
+        flex-grow: inherit;
+        width: 0
+    }
+
+    .offset-left-s-0 {
+        margin-left: 0
+    }
+
+    .offset-right-s-0 {
+        margin-right: 0
+    }
+
+    .col-s-1 {
+        -webkit-flex-basis: inherit;
+        flex-basis: inherit;
+        -webkit-flex-grow: inherit;
+        flex-grow: inherit;
+        width: 8.33333%
+    }
+
+    .offset-left-s-1 {
+        margin-left: 8.33333%
+    }
+
+    .offset-right-s-1 {
+        margin-right: 8.33333%
+    }
+
+    .col-s-2 {
+        -webkit-flex-basis: inherit;
+        flex-basis: inherit;
+        -webkit-flex-grow: inherit;
+        flex-grow: inherit;
+        width: 16.66667%
+    }
+
+    .offset-left-s-2 {
+        margin-left: 16.66667%
+    }
+
+    .offset-right-s-2 {
+        margin-right: 16.66667%
+    }
+
+    .col-s-3 {
+        -webkit-flex-basis: inherit;
+        flex-basis: inherit;
+        -webkit-flex-grow: inherit;
+        flex-grow: inherit;
+        width: 25%
+    }
+
+    .offset-left-s-3 {
+        margin-left: 25%
+    }
+
+    .offset-right-s-3 {
+        margin-right: 25%
+    }
+
+    .col-s-4 {
+        -webkit-flex-basis: inherit;
+        flex-basis: inherit;
+        -webkit-flex-grow: inherit;
+        flex-grow: inherit;
+        width: 33.33333%
+    }
+
+    .offset-left-s-4 {
+        margin-left: 33.33333%
+    }
+
+    .offset-right-s-4 {
+        margin-right: 33.33333%
+    }
+
+    .col-s-5 {
+        -webkit-flex-basis: inherit;
+        flex-basis: inherit;
+        -webkit-flex-grow: inherit;
+        flex-grow: inherit;
+        width: 41.66667%
+    }
+
+    .offset-left-s-5 {
+        margin-left: 41.66667%
+    }
+
+    .offset-right-s-5 {
+        margin-right: 41.66667%
+    }
+
+    .col-s-6 {
+        -webkit-flex-basis: inherit;
+        flex-basis: inherit;
+        -webkit-flex-grow: inherit;
+        flex-grow: inherit;
+        width: 50%
+    }
+
+    .offset-left-s-6 {
+        margin-left: 50%
+    }
+
+    .offset-right-s-6 {
+        margin-right: 50%
+    }
+
+    .col-s-7 {
+        -webkit-flex-basis: inherit;
+        flex-basis: inherit;
+        -webkit-flex-grow: inherit;
+        flex-grow: inherit;
+        width: 58.33333%
+    }
+
+    .offset-left-s-7 {
+        margin-left: 58.33333%
+    }
+
+    .offset-right-s-7 {
+        margin-right: 58.33333%
+    }
+
+    .col-s-8 {
+        -webkit-flex-basis: inherit;
+        flex-basis: inherit;
+        -webkit-flex-grow: inherit;
+        flex-grow: inherit;
+        width: 66.66667%
+    }
+
+    .offset-left-s-8 {
+        margin-left: 66.66667%
+    }
+
+    .offset-right-s-8 {
+        margin-right: 66.66667%
+    }
+
+    .col-s-9 {
+        -webkit-flex-basis: inherit;
+        flex-basis: inherit;
+        -webkit-flex-grow: inherit;
+        flex-grow: inherit;
+        width: 75%
+    }
+
+    .offset-left-s-9 {
+        margin-left: 75%
+    }
+
+    .offset-right-s-9 {
+        margin-right: 75%
+    }
+
+    .col-s-10 {
+        -webkit-flex-basis: inherit;
+        flex-basis: inherit;
+        -webkit-flex-grow: inherit;
+        flex-grow: inherit;
+        width: 83.33333%
+    }
+
+    .offset-left-s-10 {
+        margin-left: 83.33333%
+    }
+
+    .offset-right-s-10 {
+        margin-right: 83.33333%
+    }
+
+    .col-s-11 {
+        -webkit-flex-basis: inherit;
+        flex-basis: inherit;
+        -webkit-flex-grow: inherit;
+        flex-grow: inherit;
+        width: 91.66667%
+    }
+
+    .offset-left-s-11 {
+        margin-left: 91.66667%
+    }
+
+    .offset-right-s-11 {
+        margin-right: 91.66667%
+    }
+
+    .col-s-12 {
+        -webkit-flex-basis: inherit;
+        flex-basis: inherit;
+        -webkit-flex-grow: inherit;
+        flex-grow: inherit;
+        width: 100%
+    }
+
+    .offset-left-s-12 {
+        margin-left: 100%
+    }
+
+    .offset-right-s-12 {
+        margin-right: 100%
+    }
+}
+
+.mb-4 {
+    margin-bottom: 4px
+}
+
+.mb-8 {
+    margin-bottom: 8px
+}
+
+.mb-16 {
+    margin-bottom: 16px
+}
+
+.mb-20 {
+    margin-bottom: 20px
+}
+
+.mb-24 {
+    margin-bottom: 24px
+}
+
+.mb-32 {
+    margin-bottom: 32px
+}
+
+.mb-40 {
+    margin-bottom: 40px
+}
+
+.mb-48 {
+    margin-bottom: 48px
+}
+
+.mb-56 {
+    margin-bottom: 56px
+}
+
+.mb-64 {
+    margin-bottom: 64px
+}
+
+.mb-72 {
+    margin-bottom: 72px
+}
+
+.mb-80 {
+    margin-bottom: 80px
+}
+
+.mb-96 {
+    margin-bottom: 96px
+}
+
+.btn {
+    background: #1b9eff;
+    border: 2px solid #1b9eff;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    min-width: 104px;
+    padding: 0 32px;
+    position: relative;
+    text-align: center;
+    transition: background .3s, border-color .3s, color .3s;
+    vertical-align: middle;
+    white-space: nowrap
+}
+
+.btn:hover {
+    background: #47a8f7;
+    border-color: #47a8f7
+}
+
+.btn:active {
+    background: #288ddf;
+    border-color: #288ddf;
+    color: #fff
+}
+
+.btn .icon {
+    font-size: 20px
+}
+
+.social__list {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.social__item {
+    margin-bottom: 8px;
+    margin-right: 24px;
+    min-height: 41px;
+    min-width: 41px
+}
+
+.social__link {
+    background-color: #f4f4f5;
+    border-radius: 10px;
+    color: inherit;
+    display: flex;
+    padding: 13px;
+    transition: background-color .2s ease-in-out
+}
+
+.social__link:hover {
+    color: #fff
+}
+
+.social__link--facebook:hover {
+    background-color: #2c64f6
+}
+
+.social__link--google:hover {
+    background-color: #f25757
+}
+
+.social__link--twitter:hover {
+    background-color: #000
+}
+
+.social__link--youtube:hover {
+    background-color: #e93323
+}
+
+.social__link--linkedin:hover {
+    background-color: #2d64bc
+}
+
+.social__link--dribbble:hover {
+    background-color: #ab5697
+}
+
+.social__link--instagram:hover {
+    background-color: #8757e7
+}
+
+.social__link--rss:hover {
+    background-color: #e19126
+}
+
+.font--size-40 {
+    font-size: 40px
+}
+
+.font--size-24 {
+    font-size: 24px
+}
+
+.font--size-32 {
+    font-size: 32px
+}
+
+.font--size-26 {
+    font-size: 26px
+}
+
+.font--size-20 {
+    font-size: 20px
+}
+
+.font--size-18 {
+    font-size: 18px
+}
+
+.font--size-17 {
+    font-size: 17px
+}
+
+.font--size-16 {
+    font-size: 16px
+}
+
+.font--size-14 {
+    font-size: 14px
+}
+
+.font--size-13 {
+    font-size: 13px
+}
+
+.font--size-12 {
+    font-size: 12px
+}
+
+.font--size-11 {
+    font-size: 11px
+}
+
+.font--weight-regular {
+    font-weight: 400
+}
+
+.font--weight-medium {
+    font-weight: 500
+}
+
+.font--weight-semi-bold {
+    font-weight: 600
+}
+
+.font--weight-bold {
+    font-weight: 700
+}
+
+.font--color-black {
+    color: #000
+}
+
+.font--color-black-60 {
+    color: rgba(0, 0, 0, .6)
+}
+
+.font--color-black-30 {
+    color: rgba(0, 0, 0, .3)
+}
+
+.font--color-white {
+    color: #fff
+}
+
+.font--color-white-60 {
+    color: hsla(0, 0%, 100%, .6)
+}
+
+.font--color-cyprus {
+    color: #033a37
+}
+
+.font--color-cyprus-50 {
+    color: rgba(3, 58, 55, .5)
+}
+
+.font--color-pistachio {
+    color: #c3e5d6
+}
+
+.font--color-pistachio-50 {
+    color: rgba(195, 229, 214, .5)
+}
+
+.font--color-experience {
+    color: #cce822
+}
+
+.font--color-red {
+    color: #e13e3e
+}
+
+.font--no-wrap {
+    white-space: nowrap
+}
+
+.font--no-margin {
+    margin: 0
+}
