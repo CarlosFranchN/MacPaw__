@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <header class="header">
+    <nav class="nav">
+      {% block header %} {% include "/wrapper/header/header.html" %} {% endblock
+      %}
+    </nav>
+  </header>
+
+  <div class="main">
+    {% block main %} {% include "/wrapper/main/main.html" %} {% endblock %}
+  </div>
+
+  <footer class="footer footer font font--color-black">
+    {% block footer %} {% include "/wrapper/footer/footer.html" %} {% endblock %}
+  </footer>
+</div>

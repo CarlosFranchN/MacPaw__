@@ -1,0 +1,13 @@
+<div class="container">
+    <h4 class="h3">Para todos os Macs da sua organização</h4>
+    <p class="subheader">O CleanMyMac X pode cuidar de um número infinito de Macs. Aproveite nossos preços especiais para empresas e instituições de ensino.</p>
+    <div class="wrapper">
+        {% block busines_links %}
+            {% for item in busines_links %}
+                {% with link=item["link"] , icon = item["icon"] , text=item["text"] %}
+                    {% include "/wrapper/main/components/business_links/link_block.html" %}
+                {% endwith %}
+            {% endfor %}
+        {% endblock  %}
+    </div>
+</div>

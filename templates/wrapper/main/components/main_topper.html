@@ -1,0 +1,167 @@
+<div class="container">
+  <div class="topper-in">
+    <div class="row -vcenter">
+      <div class="col-6 col-s-12">
+        <div class="topper-image">
+          <div class="topper-paw -animated" data-animation="">
+            <img
+              class="topper-paw-image -animated"
+              data-animation=""
+              src="https://cdn3.macpaw.com/images/paws/cleanmymac-x.svg?id=a7bf95326b4608fb391aa5a911855262"
+              alt=""
+            />
+            <div class="topper-shadow-box -cleanmymac-x">
+              <div class="topper-shadow-1"></div>
+              <div class="topper-shadow-2"></div>
+              <svg id="svg-filter">
+                <filter id="svg-blur-50">
+                  <feGaussianBlur
+                    in="SourceGraphic"
+                    stdDeviation="50"
+                  ></feGaussianBlur>
+                </filter>
+                <filter id="svg-blur-35">
+                  <feGaussianBlur
+                    in="SourceGraphic"
+                    stdDeviation="35"
+                  ></feGaussianBlur>
+                </filter>
+              </svg>
+            </div>
+            <img
+              class="cmmx-dust"
+              src="https://cdn3.macpaw.com/images/products/cleanmymac-x/topper-pattern.svg?id=c5d227040a32f6ba348914ec8fd4422e"
+              width="1440"
+              alt=""
+            />
+          </div>
+          <div class="topper-paw-logo">
+            <div
+              class="topper-paw-animation -cleanmymac-x -animated"
+              data-animation=""
+            ></div>
+            <picture
+              class="topper-icon topper-icon--cleanmymac-x -animated"
+              data-animation=""
+            >
+              <source
+                srcset="
+                  https://cdn3.macpaw.com/images/product-icons/cleanmymac-x/cleanmymac-x4x.webp 1x,
+                  https://cdn3.macpaw.com/images/product-icons/cleanmymac-x/cleanmymac-x8x.webp 2x
+                "
+                width="512"
+                height="512"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  https://cdn3.macpaw.com/images/product-icons/cleanmymac-x/cleanmymac-x4x.png 1x,
+                  https://cdn3.macpaw.com/images/product-icons/cleanmymac-x/cleanmymac-x8x.png 2x
+                "
+                width="512"
+                height="512"
+                type="image/png"
+              />
+              <img
+                src="https://cdn3.macpaw.com/images/product-icons/cleanmymac-x/cleanmymac-x4x.png"
+                srcset="
+                  https://cdn3.macpaw.com/images/product-icons/cleanmymac-x/cleanmymac-x8x.png 2x
+                "
+                width="512"
+                height="512"
+                alt=""
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-s-12">
+        <div class="topper-content">
+          <h1 class="h2 topper-title -animated" data-animation="">
+            CleanMyMac X
+          </h1>
+          <div
+            class="h1 -normal topper-subtitle -animated"
+            data-animation=""
+            data-animation-delay="100"
+            style=""
+          >
+            Seu Mac.
+            <div>Como novo.</div>
+          </div>
+          <div
+            class="topper-text -animated"
+            data-animation=""
+            data-animation-delay="200"
+            style=""
+          >
+            <p>
+              O CleanMyMac X é uma solução completa para ter um Mac impecável.
+              Ele limpa toneladas de lixo e deixa o computador mais rápido. Como
+              nos primeiros dias.
+            </p>
+          </div>
+          <div
+            class="topper-cta -animated"
+            data-animation=""
+            data-animation-delay="300"
+            style=""
+          >
+            <div class="cta-btns" data-fixed-nav-trigger="show">
+                <a
+                href="https://my.macpaw.com/trial/cleanmymac?offerings=first&amp;testId=TBT-83AB&amp;svn=685397284.1725132023"
+                class="btn btn--first -large -success"
+                data-qa="FreeDownloadBtn"
+                onclick="dataLayer.push({
+                                    event: 'macpaw',
+                                    eventCategory: 'CleanMyMac X',
+                                    eventAction: 'Click Download',
+                                    eventLabel: 'Topper',
+                                    eventNonInteraction: false,
+                                    click_text: 'Obter Avaliação'
+                                });"
+                >
+                Obter Avaliação
+                </a>
+
+              <a
+                class="btn btn--second -large -outline-dark"
+                href="https://macpaw.com/pt/store/cleanmymac"
+                data-qa="BuyNowBtn"
+                onclick="dataLayer.push({
+                                 event: 'macpaw',
+                                 eventCategory: 'CleanMyMac X',
+                                 eventAction: 'Click Buy Now',
+                                 eventLabel: 'Topper',
+                                 eventNonInteraction: false
+                                 });"
+                >Comprar Agora
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topper-reviews">
+    
+    {% for item in review["range_reviews"] %}
+        <a
+        class="topper-reviews-item -animated"
+        href="https://macpaw.com/cleanmymac/review#{{ review["review"][item]["name"] }}"
+        target="_self"
+        data-animation=""
+        data-animation-delay="{{ item+1 }}00"
+        
+        >
+        <img
+            src="https://cdn3.macpaw.com/images/reviews/en/{{ review["review"][item]["name"].lower() }}{% if review["review"][item]["name"] != 'TechCrunch' %}-black{% endif %}.svg?id={{ review["review"][item]["id"] }}"
+            
+            alt=""
+        />
+        </a>
+    {% endfor %}
+    
+  </div>
+</div>

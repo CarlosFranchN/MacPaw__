@@ -1,0 +1,12 @@
+<div class="info-icon">{{ icon|safe }}</div>
+<div class="info-title">{{ title }}</div>
+<div class="info-content">
+{% if title == "Avaliação :" %}
+    {% include "/wrapper/main/components/indo/indo_info_star.html" %}    
+
+{% else %}
+    <p>{{ content }}</p>
+
+{% endif %}
+
+</div>

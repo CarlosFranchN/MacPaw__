@@ -1,0 +1,354 @@
+<div class="footer__container container">
+  <div class="footer__inner" data-accordion="footer">
+    {% block footer__accordion %} {% for item in footer_accordion_itens %} {%
+    with title=item["title"], list = item["list"] %} {% include
+    "/wrapper/footer/components/footer__accordion.html" %} {% endwith %} {%
+    endfor %} {% endblock %}
+
+    <div class="footer__accordion" data-accordion-block="">
+      <p
+        class="footer__section-title font font--size-14 font--weight-semi-bold footer__accordion-trigger"
+        data-accordion-trigger=""
+      >
+        Vendas
+        <span class="footer__arrow"></span>
+      </p>
+      <div class="footer__accordion-content" data-accordion-content="">
+        <ul class="footer__list">
+          <li class="footer__item font font--size-12">
+            <a class="footer__link" href="mailto:corporate@macpaw.com">
+              Vendas Corporativas
+            </a>
+          </li>
+          <li class="footer__item font font--size-12">
+            <a
+              class="footer__link"
+              href="https://macpaw.com/macpaw-student-discount"
+            >
+              Desconto de Estudante
+            </a>
+          </li>
+          <li class="footer__item font font--size-12">
+            <a
+              class="footer__link"
+              href="https://macpaw.com/cleanmymac/cleanmymac-for-business"
+            >
+              CleanMyMac X para Empresas
+            </a>
+          </li>
+          <li class="footer__item font font--size-12">
+            <a
+              class="footer__link"
+              href="https://macpaw.com/cleanmymac/educational-discount"
+            >
+              CleanMyMac X para Educação
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__section">
+    <div class="footer__social">
+      <p
+        class="footer__section-title font font--size-14 font--weight-semi-bold"
+      >
+        Siga-nos
+      </p>
+      <div class="social social--wrapped social--narrow">
+        <ul class="social__list">
+          <li class="social__item">
+            <a
+              class="social__link social__link--facebook"
+              href="https://www.facebook.com/cleanmymac"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener"
+              data-qa="footer__share-btn"
+            >
+              <span class="icon social__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="16"
+                  fill="none"
+                  viewBox="0 0 17 16"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M9.762 15.891a7.955 7.955 0 1 0-2.625.013v-5.63H5.148V8.045h1.989v-1.75c0-1.989 1.273-3.103 3.102-3.103.557 0 1.194.08 1.75.16V5.38h-1.034c-.954 0-1.193.477-1.193 1.114v1.551h2.108l-.358 2.227h-1.75v5.618Z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a
+              class="social__link social__link--instagram"
+              href="https://www.instagram.com/cleanmymac"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener"
+              data-qa="footer__share-btn"
+            >
+              <span class="icon social__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="16"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    d="M24.000048,0 C17.481991,0 16.664686,0.027628 14.104831,0.144427 C11.550311,0.260939 9.805665,0.666687 8.279088,1.260017 C6.700876,1.873258 5.362454,2.693897 4.028128,4.028128 C2.693897,5.362454 1.873258,6.700876 1.260017,8.279088 C0.666687,9.805665 0.260939,11.550311 0.144427,14.104831 C0.027628,16.664686 0,17.481991 0,24.000048 C0,30.518009 0.027628,31.335314 0.144427,33.895169 C0.260939,36.449689 0.666687,38.194335 1.260017,39.720912 C1.873258,41.299124 2.693897,42.637546 4.028128,43.971872 C5.362454,45.306103 6.700876,46.126742 8.279088,46.740079 C9.805665,47.333313 11.550311,47.739061 14.104831,47.855573 C16.664686,47.972372 17.481991,48 24.000048,48 C30.518009,48 31.335314,47.972372 33.895169,47.855573 C36.449689,47.739061 38.194335,47.333313 39.720912,46.740079 C41.299124,46.126742 42.637546,45.306103 43.971872,43.971872 C45.306103,42.637546 46.126742,41.299124 46.740079,39.720912 C47.333313,38.194335 47.739061,36.449689 47.855573,33.895169 C47.972372,31.335314 48,30.518009 48,24.000048 C48,17.481991 47.972372,16.664686 47.855573,14.104831 C47.739061,11.550311 47.333313,9.805665 46.740079,8.279088 C46.126742,6.700876 45.306103,5.362454 43.971872,4.028128 C42.637546,2.693897 41.299124,1.873258 39.720912,1.260017 C38.194335,0.666687 36.449689,0.260939 33.895169,0.144427 C31.335314,0.027628 30.518009,0 24.000048,0 Z M24.000048,4.324317 C30.40826,4.324317 31.167356,4.348801 33.69806,4.464266 C36.038036,4.570966 37.308818,4.961946 38.154513,5.290621 C39.274771,5.725997 40.074262,6.246066 40.91405,7.08595 C41.753934,7.925738 42.274003,8.725229 42.709379,9.845487 C43.038054,10.691182 43.429034,11.961964 43.535734,14.30194 C43.651199,16.832644 43.675683,17.59174 43.675683,24.000048 C43.675683,30.40826 43.651199,31.167356 43.535734,33.69806 C43.429034,36.038036 43.038054,37.308818 42.709379,38.154513 C42.274003,39.274771 41.753934,40.074262 40.91405,40.91405 C40.074262,41.753934 39.274771,42.274003 38.154513,42.709379 C37.308818,43.038054 36.038036,43.429034 33.69806,43.535734 C31.167737,43.651199 30.408736,43.675683 24.000048,43.675683 C17.591264,43.675683 16.832358,43.651199 14.30194,43.535734 C11.961964,43.429034 10.691182,43.038054 9.845487,42.709379 C8.725229,42.274003 7.925738,41.753934 7.08595,40.91405 C6.246161,40.074262 5.725997,39.274771 5.290621,38.154513 C4.961946,37.308818 4.570966,36.038036 4.464266,33.69806 C4.348801,31.167356 4.324317,30.40826 4.324317,24.000048 C4.324317,17.59174 4.348801,16.832644 4.464266,14.30194 C4.570966,11.961964 4.961946,10.691182 5.290621,9.845487 C5.725997,8.725229 6.246066,7.925738 7.08595,7.08595 C7.925738,6.246066 8.725229,5.725997 9.845487,5.290621 C10.691182,4.961946 11.961964,4.570966 14.30194,4.464266 C16.832644,4.348801 17.59174,4.324317 24.000048,4.324317 Z M24.000048,11.675683 C17.193424,11.675683 11.675683,17.193424 11.675683,24.000048 C11.675683,30.806576 17.193424,36.324317 24.000048,36.324317 C30.806576,36.324317 36.324317,30.806576 36.324317,24.000048 C36.324317,17.193424 30.806576,11.675683 24.000048,11.675683 Z M24.000048,32 C19.581701,32 16,28.418299 16,24.000048 C16,19.581701 19.581701,16 24.000048,16 C28.418299,16 32,19.581701 32,24.000048 C32,28.418299 28.418299,32 24.000048,32 Z M39.691284,11.188768 C39.691284,12.779365 38.401829,14.068724 36.811232,14.068724 C35.22073,14.068724 33.931276,12.779365 33.931276,11.188768 C33.931276,9.598171 35.22073,8.308716 36.811232,8.308716 C38.401829,8.308716 39.691284,9.598171 39.691284,11.188768 Z"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a
+              class="social__link social__link--twitter"
+              href="https://twitter.com/cleanmymac"
+              aria-label="Twitter"
+              target="_blank"
+              rel="noopener"
+              data-qa="footer__share-btn"
+            >
+              <span class="icon social__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="16"
+                  fill="none"
+                  viewBox="0 0 17 16"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M5.655 1H.928l5.648 7.82-5.712 6.315h1.821L7.384 9.94l3.753 5.196h4.727l-5.85-8.101L15.47 1h-1.82L9.203 5.913 5.655 1Zm6.286 12.859L3.462 2.32h1.379l8.48 11.539h-1.38Z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a
+              class="social__link social__link--youtube"
+              href="https://www.youtube.com/user/CleanMyMac"
+              aria-label="YouTube"
+              target="_blank"
+              rel="noopener"
+              data-qa="footer__share-btn"
+            >
+              <span class="icon social__icon">
+                <svg
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                  stroke-linejoin="round"
+                  stroke-miterlimit="1.41421"
+                  width="17"
+                  height="16"
+                  viewBox="0 0 48 34"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m19.044 23.27-.002-13.582 12.97 6.814zm28.476-15.936s-.469-3.331-1.908-4.798c-1.826-1.926-3.871-1.935-4.809-2.047-6.717-.489-16.792-.489-16.792-.489h-.022s-10.075 0-16.792.489c-.939.112-2.983.121-4.81 2.047-1.439 1.467-1.907 4.798-1.907 4.798s-.48 3.913-.48 7.824v3.668c0 3.912.48 7.823.48 7.823s.468 3.331 1.907 4.798c1.827 1.926 4.225 1.866 5.293 2.067 3.84.371 16.32.486 16.32.486s10.086-.015 16.803-.505c.938-.113 2.983-.122 4.809-2.048 1.439-1.467 1.908-4.798 1.908-4.798s.48-3.911.48-7.823v-3.668c0-3.911-.48-7.824-.48-7.824z"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__switcher" data-qa="footer__lang-selector">
+      <p
+        class="footer__section-title footer__section-title--lang font font--size-14 font--weight-semi-bold"
+      >
+        Idioma
+      </p>
+      <div class="lang-switcher">
+        <select class="lang-switcher__select" data-switcher="languages">
+          <option value="en">English</option>
+          <option value="de">Deutsch</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+          <option value="uk">Українська</option>
+          <option value="it">Italiano</option>
+          <option value="pl">Polski</option>
+          <option value="pt" selected="selected">Português do Brasil</option>
+          <option value="nl">Nederlands</option>
+          <option value="ja">日本語</option>
+          <option value="no">Nynorsk</option>
+          <option value="ko">한국어</option>
+          <option value="sv">Svenska</option>
+        </select>
+        <div class="lang-switcher__label">
+          <span class="lang-switcher__title">Português do Brasil</span>
+          <span class="icon lang-switcher__icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.2928932,5.29289322 C12.6834175,4.90236893 13.3165825,4.90236893 13.7071068,5.29289322 C14.0976311,5.68341751 14.0976311,6.31658249 13.7071068,6.70710678 L8.70710678,11.7071068 C8.31658249,12.0976311 7.68341751,12.0976311 7.29289322,11.7071068 L2.29289322,6.70710678 C1.90236893,6.31658249 1.90236893,5.68341751 2.29289322,5.29289322 C2.68341751,4.90236893 3.31658249,4.90236893 3.70710678,5.29289322 L8,9.58578644 L12.2928932,5.29289322 Z"
+              ></path>
+            </svg>
+          </span>
+        </div>
+        <ul class="lang-switcher__list" hidden="" data-lang-switcher-links="">
+          <li class="lang-switcher__item">
+            <a
+              class="lang-switcher__link"
+              data-switcher-id="en"
+              href="https://macpaw.com/cleanmymac?ref=landingfolio"
+            >
+              English
+            </a>
+          </li>
+          <li class="lang-switcher__item">
+            <a
+              class="lang-switcher__link"
+              data-switcher-id="de"
+              href="https://macpaw.com/de/cleanmymac?ref=landingfolio"
+            >
+              German
+            </a>
+          </li>
+          <li class="lang-switcher__item">
+            <a
+              class="lang-switcher__link"
+              data-switcher-id="es"
+              href="https://macpaw.com/es/cleanmymac?ref=landingfolio"
+            >
+              Spanish
+            </a>
+          </li>
+          <li class="lang-switcher__item">
+            <a
+              class="lang-switcher__link"
+              data-switcher-id="fr"
+              href="https://macpaw.com/fr/cleanmymac?ref=landingfolio"
+            >
+              French
+            </a>
+          </li>
+          <li class="lang-switcher__item">
+            <a
+              class="lang-switcher__link"
+              data-switcher-id="uk"
+              href="https://macpaw.com/uk/cleanmymac?ref=landingfolio"
+            >
+              Ukrainian
+            </a>
+          </li>
+          <li class="lang-switcher__item">
+            <a
+              class="lang-switcher__link"
+              data-switcher-id="it"
+              href="https://macpaw.com/it/cleanmymac?ref=landingfolio"
+            >
+              Italian
+            </a>
+          </li>
+          <li class="lang-switcher__item">
+            <a
+              class="lang-switcher__link"
+              data-switcher-id="pl"
+              href="https://macpaw.com/pl/cleanmymac?ref=landingfolio"
+            >
+              Polish
+            </a>
+          </li>
+          <li class="lang-switcher__item">
+            <a
+              class="lang-switcher__link"
+              data-switcher-id="pt"
+              href="https://macpaw.com/pt/cleanmymac?ref=landingfolio"
+            >
+              Brazilian Portuguese
+            </a>
+          </li>
+          <li class="lang-switcher__item">
+            <a
+              class="lang-switcher__link"
+              data-switcher-id="nl"
+              href="https://macpaw.com/nl/cleanmymac?ref=landingfolio"
+            >
+              Dutch
+            </a>
+          </li>
+          <li class="lang-switcher__item">
+            <a
+              class="lang-switcher__link"
+              data-switcher-id="ja"
+              href="https://macpaw.com/ja/cleanmymac?ref=landingfolio"
+            >
+              Japanese
+            </a>
+          </li>
+          <li class="lang-switcher__item">
+            <a
+              class="lang-switcher__link"
+              data-switcher-id="no"
+              href="https://macpaw.com/no/cleanmymac?ref=landingfolio"
+            >
+              Norwegian Nynorsk
+            </a>
+          </li>
+          <li class="lang-switcher__item">
+            <a
+              class="lang-switcher__link"
+              data-switcher-id="ko"
+              href="https://macpaw.com/ko/cleanmymac?ref=landingfolio"
+            >
+              Korean
+            </a>
+          </li>
+          <li class="lang-switcher__item">
+            <a
+              class="lang-switcher__link"
+              data-switcher-id="sv"
+              href="https://macpaw.com/sv/cleanmymac?ref=landingfolio"
+            >
+              Swedish
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer__legal">
+  <div class="container">
+    <div class="footer__legal-inner">
+      <a
+        class="footer__logo"
+        href="https://macpaw.com/"
+        aria-label="MacPaw homepage"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon footer__logo-icon"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9.622.21c.235-.126 1.12-.432 1.38.06s-.483 1.061-.736 1.196c-.252.136-.664.122-.898-.321A.675.675 0 0 1 9.622.21m2.634 4.822c.236-.126 1.12-.431 1.38.06c.26.492-.482 1.061-.735 1.196c-.253.136-.664.123-.899-.32a.675.675 0 0 1 .254-.936M12 24a11.4 11.4 0 0 1-8.08-3.345a11.38 11.38 0 0 1-3.35-8.077a11.38 11.38 0 0 1 3.35-8.077a11.4 11.4 0 0 1 3.632-2.446a2.835 2.835 0 0 1 3.719 1.508a2.84 2.84 0 0 1-1.508 3.716c-.684.289-1.3.704-1.83 1.233a5.7 5.7 0 0 0-1.684 4.067a5.7 5.7 0 0 0 1.684 4.065A5.73 5.73 0 0 0 12 18.327a5.73 5.73 0 0 0 4.068-1.683a5.7 5.7 0 0 0 1.685-4.065a2.84 2.84 0 0 1 2.838-2.837a2.84 2.84 0 0 1 2.838 2.836a11.3 11.3 0 0 1-.9 4.447a11.4 11.4 0 0 1-2.447 3.63A11.42 11.42 0 0 1 12 24m.426-21.111c.263-.14 1.346-.533 1.635.016c.29.549-.633 1.235-.915 1.386s-.742.136-1.003-.359a.754.754 0 0 1 .283-1.043m-1.004-1.806c.263-.14 1.32-.518 1.61.03c.29.55-.608 1.221-.89 1.372s-.741.136-1.003-.358a.754.754 0 0 1 .283-1.044"
+          />
+        </svg>
+      </a>
+      <p class="footer__legal-company font font--size-12 font--color-black-60">
+        Copyright © 2024 MacPaw Way Ltd.
+      </p>
+    </div>
+  </div>
+</div>

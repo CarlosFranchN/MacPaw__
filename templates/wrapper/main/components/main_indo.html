@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="service">
+      <div class="info-wrap">
+        <div class="row">
+          <div class="col-3 col-s-6 col-xs-12 info-item">
+            {% block sistema %}
+              {% with icon= indo_info[0]["icon"],title= indo_info[0]["title"],content= indo_info[0]["content"]   %}
+                {% include "/wrapper/main/components/indo/indo_info.html" %}
+              {% endwith %}
+            {% endblock  %}
+
+          </div>
+          <div class="col-3 col-s-6 col-xs-12 info-item">
+            {% block avaliacao %}
+            {% with icon= indo_info[1]["icon"],title= indo_info[1]["title"],content= ""   %}
+              {% include "/wrapper/main/components/indo/indo_info.html" %}
+            {% endwith %}
+          {% endblock  %}
+          </div>
+          <div class="col-3 col-s-6 col-xs-12 info-item">
+            {% block preco %}
+            {% with icon= indo_info[2]["icon"],title= indo_info[2]["title"],content= indo_info[2]["content"]   %}
+              {% include "/wrapper/main/components/indo/indo_info.html" %}
+            {% endwith %}
+          {% endblock  %}
+          </div>
+          <div class="col-3 col-s-6 col-xs-12 info-item">
+            {% block versao %}
+            {% with icon= indo_info[3]["icon"],title= indo_info[3]["title"],content= indo_info[3]["content"]   %}
+              {% include "/wrapper/main/components/indo/indo_info.html" %}
+            {% endwith %}
+          {% endblock  %}
+          </div>
+
+        </div>
+      </div>
+      <div class="hint">
+        *4.9 - avaliação de todas as versões, baseada em 539 avaliações de
+        usuários.
+      </div>
+    </div>
+  </div>
+  

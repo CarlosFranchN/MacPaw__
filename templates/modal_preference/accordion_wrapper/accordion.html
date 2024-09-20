@@ -1,0 +1,38 @@
+<div class="cky-accordion" id="ckyDetailCategory{{ theme }}">
+    <div class="cky-accordion-item">
+      <div class="cky-accordion-chevron">
+        <i class="cky-chevron-right"></i>
+      </div>
+      <div class="cky-accordion-header-wrapper">
+        <div class="cky-accordion-header">
+          <button
+            class="cky-accordion-btn"
+            aria-expanded="false"
+            aria-label="{{ theme }}"
+            data-cky-tag="detail-category-title"
+          >
+            {{ theme }}
+          </button>
+          {{ content|safe }}
+        </div>
+        <div
+          class="cky-accordion-header-des"
+          data-cky-tag="detail-category-description"
+          style="color: #212121"
+        >
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor
+            aspernatur animi numquam saepe voluptates iure placeat id eaque
+            blanditiis ullam, labore ipsum quia nihil est laudantium ut odio
+            aliquam et.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="cky-accordion-body">
+      {% block cookie %}
+          {% include "modal_preference/accordion_wrapper/cookies.html" %}
+      {% endblock  %}
+    </div>
+  </div>
+  

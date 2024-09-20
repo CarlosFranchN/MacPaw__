@@ -1,0 +1,19 @@
+<div data-nav="menu" class="nav-menu">
+    <div class="container">
+      <ul class="menu">
+
+            
+        {% block li_store %}
+            {% for op in (["store","lojinha"],["supp","suporte"],["empresa","empresa"],["blog","blog"],["labs","labs"]) %}
+                {% with content= op[0], name = op[1]  %}
+                    {% include "wrapper/header/dropdown_menu/menu_options.html" %}
+                
+                {% endwith %}
+        
+                
+            {% endfor %}
+        {% endblock %}
+        
+      </ul>
+    </div>
+  </div>

@@ -1,0 +1,25 @@
+<div class="cky-preference-body-wrapper">
+  <div class="cky-preference-content-wrapper" data-cky-tag="detail-description">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolor modi
+      maxime explicabo nobis id, nihil, blanditiis dicta cumque excepturi, culpa
+      assumenda. Dolorem molestias magnam animi ex porro harum rerum.
+    </p>
+    <p>
+      The cookies that are categorized as "Necessary" are stored on your browser
+      as they are essential for enabling the basic functionalities of the site.
+      ...&nbsp;
+      <button
+        class="cky-show-desc-btn"
+        data-cky-tag="show-desc-button"
+        aria-label="Show more"
+      >
+        Show more
+      </button>
+    </p>
+  </div>
+  <div class="cky-horizontal-separator"></div>
+
+  {% block accordion_wrapper %} {% include
+  "modal_preference/accordion_wrapper/accordion_wrapper.html" %} {% endblock %}
+</div>

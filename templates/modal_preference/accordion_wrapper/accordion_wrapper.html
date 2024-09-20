@@ -1,0 +1,22 @@
+
+
+<div class="cky-accordion-wrapper" data-cky-tag="detail-categories">
+  
+  {% block accordion1 %}
+    {% with theme="Necessary", content='<span class="cky-always-active">Always Active</span>' %}
+        {% include "modal_preference/accordion_wrapper/accordion.html" %}
+
+    {% endwith %}
+  {% endblock  %}
+
+  {% for word in ["Functional","Analytics", "Performace", "Advertisement","Uncategorized"]  %}
+          {% with theme=word , content = '<div class="cky-switch" data-cky-tag="detail-category-toggle">
+                  <input type="checkbox" id="ckySwitchfunctional" aria-label="Disable Functional" style="background-color: rgb(6, 198, 104);"></div>' %}
+              {% include "modal_preference/accordion_wrapper/accordion.html" %}
+          {% endwith %}
+
+  
+  {% endfor %}
+
+</div>
+

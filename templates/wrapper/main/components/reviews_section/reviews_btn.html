@@ -1,0 +1,17 @@
+<button
+  class="reviews-btn {{ active }}"
+  data-reviews-btn=""
+  aria-label="reviews navigation button"
+>
+  <img
+    src="https://cdn3.macpaw.com/images/reviews/en/{% if name != 'TechCrunch' %}{{ name.lower() }}-black{% else %}{{ name.lower() }}{% endif %}.svg?id={{ id }}"
+    alt=""
+  />
+  <div
+    class="reviews-btn-line"
+    data-reviews-line=""
+    style=""
+  ></div>
+</button>
+
+

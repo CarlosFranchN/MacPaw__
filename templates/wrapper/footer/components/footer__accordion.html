@@ -1,0 +1,22 @@
+<div class="footer__accordion" data-accordion-block="">
+  <p
+    class="footer__section-title font font--size-14 font--weight-semi-bold footer__accordion-trigger"
+    data-accordion-trigger=""
+  >
+    {{ title }}
+    <span class="footer__arrow"></span>
+  </p>
+  <div class="footer__accordion-content" data-accordion-content="">
+    <ul class="footer__list">
+        {% for item in list   %}
+            <li class="footer__item font font--size-12">
+            <a class="footer__link" href="{{ item["link"] }}">
+                {{ item["content"] }}
+            </a>
+            </li>
+        
+        {% endfor %}
+
+    </ul>
+  </div>
+</div>

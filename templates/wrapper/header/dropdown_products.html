@@ -1,0 +1,35 @@
+<div data-nav="products" class="nav-products">
+    <div class="container">
+      <ul class="products-list" data-products="list">
+          {% block li %}
+
+            {% for item in products %}
+              {% with product=item["link"] , title=item["title"]  %}
+                {% include "/wrapper/header/dropdown_products/products.html" %}
+              {% endwith %}
+            
+            {% endfor %}
+          {% endblock  %}
+      </ul>
+      <div class="products-btns">
+        <button
+          class="products-btn-left"
+          data-products="left"
+          disabled="disabled"
+          tabindex="0"
+          aria-label="scroll left"
+        >
+          <i></i>
+        </button>
+        <button
+          class="products-btn-right"
+          data-products="right"
+          disabled="disabled"
+          tabindex="0"
+          aria-label="scroll right"
+        >
+          <i></i>
+        </button>
+      </div>
+    </div>
+  </div>

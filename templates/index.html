@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Página Principal{% endblock %}
+
+{% block content %}
+    <div class="cky-overlay cky-hide"></div>    
+    {% block revisit_btn %}
+        {% include "revisit.html" %}
+    {% endblock  %}
+    {% block modal_siderbar %}
+        {% include "modal_sidebar.html" %}
+    {% endblock  %}
+    {% block wrapper %}
+        {% include "wrapper.html" %}
+    {% endblock %}
+
+        <script src="{{ url_for('static', filename='js/ck_revisit.js') }}"></script>
+        <script src="{{ url_for  ('static', filename='js/ck_preference.js') }}"></script>
+        <script src="{{ url_for  ('static', filename='js/wrapper_head.js') }}"></script>
+        <script src="{{ url_for  ('static', filename='js/review_swiper.js') }}"></script>
+        <script src="{{ url_for  ('static', filename='js/fixed_nav.js') }}"></script>
+
+        {% endblock %}

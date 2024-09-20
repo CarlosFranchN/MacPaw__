@@ -1,0 +1,33 @@
+<div class="container">
+  <h4 class="h3">Especialistas falam sobre o CleanMyMac X</h4>
+</div>
+
+<div class="reviews-btns-wrapper -clip" data-reviews-scroll="">
+  <div class="container">
+    <div class="reviews-btns swiper-pagination-custom" data-reviews-btns="">
+      {% block btns %} {% for item in review_btns %} {% with name=item["name"] ,
+      id = item["id"], active="-active" if loop.first else "" %} {% include
+      "/wrapper/main/components/reviews_section/reviews_btn.html" %} {% endwith
+      %} {% endfor %} {% endblock %}
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div
+    class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"
+    data-swiper="reviews"
+  >
+    <div
+      class="swiper-wrapper"
+      id="swiper-wrapper-88b2c741090d7e1df"
+      aria-live="polite"
+      style=""
+    >
+      {% for quote in reviews_quotes %} {% with
+      index=reviews_quotes.index(quote) ,quote = quote["quote"], author =
+      quote["author"], active="-active" if loop.first else "" %} {% include
+      "/wrapper/main/components/reviews_section/swiper_container.html" %} {%
+      endwith %} {% endfor %}
+    </div>
+  </div>
+</div>
