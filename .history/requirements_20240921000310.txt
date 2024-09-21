@@ -31,7 +31,7 @@ Django==5.1.1
 executing==2.0.1
 fastapi==0.112.2
 fastjsonschema==2.19.1
-Flask>=2.0.0
+Flask==3.0.0
 Flask-Login==0.6.3
 Flask-SQLAlchemy==3.1.1
 flet==0.24.0
